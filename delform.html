@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- <title>Responsive Business website template</title>-->
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+      <script type="text/javascript" src="js/modernizr.js"></script>
+      <script type="text/javascript" src="js/responsee.js"></script>
+	  <link rel="stylesheet" type="text/css" href="delegateform.css" media="screen"> 
+	  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	  
+      <!--[if lt IE 9]>
+	      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+      <![endif]-->
+      <title>SSN MUN </title>
+   </head>
+   
+   <body class="size-960" background="img/form2.png" >
+      <!-- HEADER -->
+      <header>
+          
+        <div class="line">
+            
+               <div class="s-12 m-12 l-12">
+                  <img src="img/forheader.png" style="width:100%;">
+               </div>
+            
+      </div>
+           
+		
+         <!-- TOP NAV -->  
+        <div class="line">
+            <nav class="margin-bottom">
+               <p class="nav-text"></p>
+               <div class="top-nav s-15 l-12">
+                  <ul>
+                     <li class="selected"><a href="index.html">Home</a></li>
+                     <li><a>Committees</a>
+                        <ul>
+                           <li><a href="disec.html">UNGA-DISEC</a></li>
+                           <li><a href="unsc.html">UNSC</a></li>
+                           <li><a href="oic.html">OIC</a></li>
+               <li><a href="hrc.html">UNHRC</a></li>
+               <li><a href="au.html">AU</a></li>
+               <li><a href="ess.html">UNGA-ESS</a></li>
+                        </ul>
+                     </li>
+           <li><a href="ip.html">International Press</a>
+                </li>
+                     <li><a href="delform.html">Applications</a></li>
+                        
+               
+                <li><a href="team.html">The Secretariat</a>
+                </li>
+           <li><a href="sponsorscomingsoon.html">Sponsors</a></li>
+           <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+               </div>
+             
+            </nav>
+         </div>
+      </header>
+      <section>
+                 
+                    <br><br>
+					<div style="margin:0 auto;width:75%;">
+					<form method="post" style="font-weight:bold;" action="delegateform.php" >
+					<h2 style="text-align:center;font-weight:bold;font-size:27px;color:#00688B;font-family:TimesNewRoman, Times, Baskerville, Georgia, serif;"><br><br>DELEGATE APPLICATION FORM</h2><br><br>
+					<label>Name </label>		<input type="text"  required="required" name="name" id="name"><br><br>
+					<label>Year of Study</label>    <input type="text" required="required" name="yos" id="yos"><br><br>
+					
+					<label>Email</label>			<input type="email" required="required" name="email"><br><br>
+					<label>Phone Number </label>	<input type="text" required="required"  name="phone" id="phone"><br><br>
+					<label>Institution </label>		<input type="text" required="required" name="inst" id="inst"><br><br>
+					<label>Number of MUNs attended as a Delegate</label> <input  type="text" required="required" name="delno" id="delno"><br><br>
+					<label>Experience as a Delegate </label>
+					<textarea required="required" name="exp_del" id="exp_del"></textarea><br><br>
+					<label>Number of MUNs attended as a member of the Executive Board</label> <input type="text" required="required" name="ebno" id="ebno"><br><br>
+					<label>Experience as a member of Executive Board</label>
+					<textarea required="required" name="exp_eb" id="exp_eb"></textarea><br><br>
+					<label>COMMITTEE AND COUNTRY PREFERENCES</label><br><br>
+					
+					<label>Committee Preference 1 : </label>
+					<select name="committee-one" style="margin-left:3em;" required="required"> 
+					<option disabled selected value>--select a committee--</option>
+					<option value="hrc">UNHRC</option>
+					<option value="sc">UNSC</option>
+					<option value="au">AU</option>
+					<option value="ess">ESS</option>
+					<option value="oic">OIC</option>
+					<option value="disec">DISEC</option>
+					</select><br><br>
+					<label>Country Preferences ( Any 3 )</label> 
+					<textarea required="required" name="countryprefincomm1" id="c1"></textarea><br><br>
+					
+					<label>Committee Preference 2 : </label>
+					<select name="committee-two" style="margin-left:3em;" required="required"> 
+					<option disabled selected value>--select a committee--</option>
+					<option value="hrc">UNHRC</option>
+					<option value="sc">UNSC</option>
+					<option value="au">AU</option>
+					<option value="ess">ESS</option>
+					<option value="oic">OIC</option>
+					<option value="disec">DISEC</option>
+					</select><br><br>
+					<label>Country Preferences ( Any 3 )</label> 
+					<textarea required="required" name="countryprefincomm2" id="c2"></textarea><br><br>
+					
+					
+					<label>Committee Preference 3 : </label> 
+					<select name="committee-three" style="margin-left:3em;" required="required"> 
+					<option disabled selected value>--select a committee--</option>
+					<option value="hrc">UNHRC</option>
+					<option value="sc">UNSC</option>
+					<option value="au">AU</option>
+					<option value="ess">ESS</option>
+					<option value="oic">OIC</option>
+					<option value="disec">DISEC</option>
+					</select><br><br>
+					<label>Country Preferences ( Any 3 )</label> 
+					<textarea  required="required" name="countryprefincomm3" id="c3"></textarea><br><br>
+					
+					
+					<label for="acco" style="vertical-align:middle;">Do you need accomodation ?</label> 
+					<select name="acco" style="margin-left:3em;" required="required">
+					<option disabled selected value>--select an option--</option>
+					<option value="yes">YES</option>
+					<option value="no">NO</option>
+					</select>
+					<br><br>
+					<label>Comments (Optional)</label> <textarea name="comments"></textarea><br><br> 
+					<div class="button_sub"><input type="submit" name="submit" value="SUBMIT" /></div><br><br>
+					<script>
+					$('form').submit(function () {
+
+					// Get the values and trim 
+					var namev= $.trim($('#name').val());
+					var yosv = $.trim($('#yos').val());
+					var phonev= $.trim($('#phone').val());
+					var instv= $.trim($('#inst').val());
+					var delnov= $.trim($('#delno').val());
+					var exp_delv= $.trim($('#exp_del').val());
+					var ebnov= $.trim($('#ebno').val());
+					var exp_ebv= $.trim($('#exp_eb').val());
+					var c1v= $.trim($('#c1').val());
+					var c2v= $.trim($('#c2').val());
+					var c3v= $.trim($('#c3').val());
+					
+					// Check if empty or not
+						if (yosv === '' || namev === '' || phonev === '' || instv === '' || delnov === '' || exp_delv === '' || ebnov === '' || exp_ebv === '' || c1v === '' || c2v === '' || c3v === '') 
+						{
+						alert('One or more required fields are empty.');
+						return false;
+						}
+					});
+					</script>
+					</form>
+					</div>
+                
+         <br><br>
+		
+      </section>
+   </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- <title>Responsive Business website template</title>-->
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+      <script type="text/javascript" src="js/modernizr.js"></script>
+      <script type="text/javascript" src="js/responsee.js"></script>
+	  <link rel="stylesheet" type="text/css" href="delegateform.css" media="screen"> 
+	  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	  
+      <!--[if lt IE 9]>
+	      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+      <![endif]-->
+      <title>Delegate Payment | SSNMUN 2016</title>
+	  <style>
+		#show{
+			border-radius:10%;
+			border: 3px solid #0068BF;
+			height:50px;
+			width;200px;
+			cursor:pointer;
+			box-shadow: 5px 5px 2px #888888;
+		}
+	  </style>
+   </head>
+   
+   <body class="size-960" background="img/form2.png" >
+      <!-- HEADER -->
+      <header>
+          
+        <div class="line">
+            
+               <div class="s-12 m-12 l-12">
+                  <img src="img/forheader.png" style="width:100%;">
+               </div>
+            
+      </div>
+           
+		
+         <!-- TOP NAV -->  
+        <div class="line">
+            <nav class="margin-bottom">
+               <p class="nav-text"></p>
+               <div class="top-nav s-15 l-12">
+                  <ul>
+                     <li class="selected"><a href="index.html">Home</a></li>
+                     <li><a>Committees</a>
+                        <ul>
+                           <li><a href="disec.html">UNGA-DISEC</a></li>
+                           <li><a href="unsc.html">UNSC</a></li>
+                           <li><a href="oic.html">OIC</a></li>
+               <li><a href="hrc.html">UNHRC</a></li>
+               <li><a href="au.html">AU</a></li>
+               <li><a href="ess.html">UNGA-ESS</a></li>
+                        </ul>
+                     </li>
+           <li><a href="ip.html">International Press</a>
+                </li>
+                     <li><a href="delform.html">Applications</a></li>
+                        
+               
+                <li><a href="team.html">The Secretariat</a>
+                </li>
+           <li><a href="sponsorscomingsoon.html">Sponsors</a></li>
+           <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+               </div>
+             
+            </nav>
+         </div>
+      </header>
+      <section>
+                 
+                    <br><br>
+					<div id="instr" style="opacity:0.9;background-color:#ffffe0;border-radius:5%;border:10px outset #00008B;margin:0 auto;width:75%;padding:10px 10px 20px 10px;">
+						<h2 style="color:#00688B;font-family:Lucida Console,Verdana,arial;font-size:20px;">This is the portal for paying your delegate registration fee.<br>
+							Please ensure that you strictly enter only your  <strong>MUN registration number</strong>, and not your institution registration number<br>
+							Your MUN regestration number can be found against your name on the allotment sheet. Please co-operate with us in this regard.<br>
+							If you have applied, but not been alloted yet, kindly refrain from making a payment, and remain patient for further rounds of allotment.<br>
+							Kindly bear with us through the process of payment.<br>
+							Cheers<br>
+							The Finance Team
+							</h2>
+						<div class="button_sub"><button type="button" id="show" style="background-color:#808080;color:white;font-size:20px;font-family:Comic Sans MS"><strong>PROCEED TO PAYMENT FORM</strong></button></div>
+					</div>
+					<div id="forms" style="color:#00688B;margin:0 auto;width:75%;display:none;">
+					<form action="payment.php" method="post" style="font-weight:bold;">
+					<h2 style="text-align:center;font-weight:bold;font-size:27px;color:#00688B;font-family:TimesNewRoman, Times, Baskerville, Georgia, serif;"><br><br>DELEGATE PAYMENT PORTAL</h2><br><br>
+					<label>Name </label>		<input type="text"  required="required" name="name" id="name"><br><br>
+					<label>MUN Registration Number</label>			<input type="text" required="required" name="mregno"><br><br>
+					<label>Email</label>			<input type="email" required="required" name="email"><br><br>
+					<label>Phone Number </label>	<input type="text" required="required"  name="phone" id="phone"><br><br>
+					<label>Institution </label>		<input type="text" required="required" name="inst" id="inst"><br><br>	
+					<label>Committee Allotted: </label>
+					<select name="committee_all" style="margin-left:3em;" required="required"> 
+					<option disabled selected value>--select a committee--</option>
+					<option value="hrc">UNHRC</option>
+					<option value="sc">UNSC</option>
+					<option value="au">AU</option>
+					<option value="ess">ESS</option>
+					<option value="oic">OIC</option>
+					<option value="disec">DISEC</option>
+					</select><br><br>
+					<label>Country/Position Allotted</label> 
+					<input type="text" required="required" name="country" id="country" /><br><br>
+					<label>Payment for registration or accommodation</label>
+					<select name="pay_type" style="margin-left:3em;" required="required"> 
+					<option disabled selected value>--select--</option>
+					<option value="registration">REGISTRATION</option>
+					<option value="acco">ACCOMMODATION</option>
+					</select><br><br>
+					<div class="button_sub"><input type="submit" name="submit" value="MAKE PAYMENT" style="width:300px;height:50px" /></div><br><br>
+					<script>
+					//Any script required
+					$('#show').click(function(){
+						$('#instr').fadeOut(1000, function(){
+							$('#forms').fadeIn(1000);
+						});
+					});
+					</script>
+					</form>
+					</div>
+                
+         <br><br>
+		
+      </section>
+   </body>
+</html>
